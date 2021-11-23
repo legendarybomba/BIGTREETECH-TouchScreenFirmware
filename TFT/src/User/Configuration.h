@@ -122,8 +122,8 @@
 
 // Mesh Leveling Display Colors (Mesh Editor)
 // Set the colors used for drawing the mesh with the minimun and maximum value in the grid.
-#define MESH_MIN_COLOR 7  // Default: 7
-#define MESH_MAX_COLOR 2  // Default: 2
+#define MESH_MIN_COLOR 0  // Default: 7
+#define MESH_MAX_COLOR 9  // Default: 2
 
 /**
  * Terminal Text Color Scheme
@@ -147,7 +147,7 @@
  *     POPUP: Display a popup window for user confirmation.
  *     TOAST: A non-blocking Toast notification is displayed for few seconds. No user interaction is needed.
  */
-#define ACK_NOTIFICATION 1  // Default: 1
+#define ACK_NOTIFICATION 2  // Default: 1
 
 /**
  * Files Sorting
@@ -178,7 +178,7 @@
  * Show persistent temperature info in all menus.
  *   Options: [disable: 0, enable: 1]
  */
-#define PERSISTENT_INFO 0  // Default: 0
+#define PERSISTENT_INFO 1  // Default: 0
 
 /**
  * Temperature ACK In Terminal
@@ -240,7 +240,7 @@
  *
  *   Options: [Layer height: 0, Layer number: 1, Both - height & number: 2]
  */
-#define LAYER_DISP_TYPE 0  // Default: 0
+#define LAYER_DISP_TYPE 2  // Default: 0
 
 //================================================================================
 //============================= Marlin Mode Settings =============================
@@ -277,8 +277,8 @@
  *   Options: [ WHITE: 0,  BLACK: 1,  RED: 2,  GREEN: 3,      BLUE: 4,       CYAN: 5,  MAGENTA: 6,    YELLOW: 7,
  *             ORANGE: 8, PURPLE: 9, LIME: 10, BROWN: 11, DARKBLUE: 12, DARKGREEN: 13,    GRAY: 14, DARKGRAY: 15]
  */
-#define MARLIN_BACKGROUND_COLOR 1  // Marlin Mode background color (Default: 1)
-#define MARLIN_FONT_COLOR       0  // Marlin Mode font color (Default: 0)
+#define MARLIN_BACKGROUND_COLOR 0  // Marlin Mode background color (Default: 1)
+#define MARLIN_FONT_COLOR       9  // Marlin Mode font color (Default: 0)
 
 /**
  * Fullscreen Marlin Mode
@@ -288,7 +288,7 @@
  *
  *   Options: [disable: 0, enable: 1]
  */
-#define MARLIN_FULLSCREEN 0  // Default: 0
+#define MARLIN_FULLSCREEN 1  // Default: 0
 
 /**
  * Show Marlin Mode Title
@@ -302,7 +302,7 @@
  * Banner text displayed at the top of the TFT in Marlin Mode.
  *   Value range: [min: 3, max: 20 characthers]
  */
-#define MARLIN_TITLE "Marlin Mode"  // Default: "Marlin Mode"
+#define MARLIN_TITLE "Command Ship"  // Default: "Marlin Mode"
 
 /**
  * Marlin Mode Type
@@ -583,9 +583,9 @@
  *                hotend temp: [min: 20, max: 1000]
  *                bed temp:    [min: 20, max: 400]
  */
-#define PREHEAT_LABELS {"PLA", "PETG", "ABS", "WOOD", "TPU", "NYLON"}  // Default: {"PLA", "PETG", "ABS", "WOOD", "TPU", "NYLON"}
-#define PREHEAT_HOTEND {200,   240,    230,   170,    220,   250}      // Default: {200,   240,    230,   170,    220,   250}
-#define PREHEAT_BED    { 60,    70,     90,    50,     50,    90}      // Default: { 60,    70,     90,    50,     50,    90}
+#define PREHEAT_LABELS {"PLA", "PLA+", "PETG", "WOOD", "TPU", "NYLON"}  // Default: {"PLA", "PETG", "ABS", "WOOD", "TPU", "NYLON"}
+#define PREHEAT_HOTEND {200,   215,    235,   170,    220,   250}      // Default: {200,   240,    230,   170,    220,   250}
+#define PREHEAT_BED    { 60,    65,     70,    50,     50,    90}      // Default: { 60,    70,     90,    50,     50,    90}
 
 //================================================================================
 //============================ Power Supply Settings =============================
@@ -771,7 +771,7 @@
  * Knob LED color at startup.
  *   Options: [OFF: 0, WHITE: 1, RED: 2, ORANGE: 3, YELLOW: 4, GREEN: 5, BLUE: 6, INDIGO: 7, VIOLET: 8]
  */
-#define KNOB_LED_COLOR 1  // Default: 1
+#define KNOB_LED_COLOR 8  // Default: 1
 
 // Keep the LED state in Marlin Mode
 #define KEEP_KNOB_LED_COLOR_MARLIN_MODE  // Default: uncommented (enabled)
@@ -1002,8 +1002,8 @@
  * Set the maximum number of grid points per dimension.
  *   Value range: [min: 1, max: 15]
  */
-#define MESH_GRID_MAX_POINTS_X 15  // Default: 15
-#define MESH_GRID_MAX_POINTS_Y 15  // Default: 15
+#define MESH_GRID_MAX_POINTS_X 3  // Default: 15
+#define MESH_GRID_MAX_POINTS_Y 3  // Default: 15
 
 /**
  * Bed Leveling Type
