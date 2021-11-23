@@ -500,7 +500,7 @@
  */
 #define LEVELING_EDGE_DISTANCE    20  // Inset distance from bed's edge for calculating leveling point location (Default: 20)
 #define LEVELING_Z_POS          0.2f  // Z-axis position when nozzle stays for leveling (Default: 0.2f)
-#define LEVELING_Z_RAISE       10.0f  // Z-axis position when nozzle move to next point (Default: 10.0f)
+#define LEVELING_Z_RAISE        5.0f  // Z-axis position when nozzle move to next point (Default: 10.0f)
 #define LEVELING_XY_FEEDRATE    6000  // (mm/min) X and Y axes move feedrate (Default: 6000)
 #define LEVELING_Z_FEEDRATE     6000  // (mm/min) Z axis move feedrate (Default: 6000)
 
@@ -553,7 +553,7 @@
  *   Unit: [distance in mm]
  *   Value range: [min: -2000, max: 2000]
  */
-#define PROBING_Z_RAISE 20.0f  // Default: 20.0f
+#define PROBING_Z_RAISE 5.0f  // Default: 20.0f
 
 /**
  * Z Steppers Auto-Alignment (ABL)
