@@ -22,10 +22,10 @@ void menuExtrude(void)
     // icon                          label
     {
       {ICON_UNLOAD,                  LABEL_UNLOAD},
-      {ICON_BACKGROUND,              LABEL_BACKGROUND},
-      {ICON_BACKGROUND,              LABEL_BACKGROUND},
+      {ICON_NULL,                    LABEL_NULL},
+      {ICON_NULL,                    LABEL_NULL},
       {ICON_LOAD,                    LABEL_LOAD},
-      {ICON_BACKGROUND,              LABEL_BACKGROUND},
+      {ICON_NULL,                    LABEL_NULL},
       {ICON_E_5_MM,                  LABEL_5_MM},
       {ICON_NORMAL_SPEED,            LABEL_NORMAL},
       {ICON_BACK,                    LABEL_BACK},
@@ -144,6 +144,10 @@ void menuExtrude(void)
           {
             extrKnownCoord = extrNewCoord;
             extruderReDraw(curExtruder_index, extrNewCoord, true);
+            if (isPrinting() && isPaused())
+            {
+              setExtrusionDuringPause(true);
+            }
           }
           break;
       }

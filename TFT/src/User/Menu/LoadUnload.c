@@ -17,8 +17,8 @@ const MENUITEMS loadUnloadItems = {
   // icon                          label
   {
     {ICON_UNLOAD,                  LABEL_UNLOAD},
-    {ICON_BACKGROUND,              LABEL_BACKGROUND},
-    {ICON_BACKGROUND,              LABEL_BACKGROUND},
+    {ICON_NULL,                    LABEL_NULL},
+    {ICON_NULL,                    LABEL_NULL},
     {ICON_LOAD,                    LABEL_LOAD},
     {ICON_NOZZLE,                  LABEL_NOZZLE},
     {ICON_HEAT,                    LABEL_HEAT},
@@ -166,6 +166,10 @@ void menuLoadUnload(void)
                 request_M98("sys/load.g");
               }
               lastCmd = LOAD_STARTED;
+            }
+            if (isPrinting() && isPaused())
+            {
+              setExtrusionDuringPause(true);
             }
          }
       }
