@@ -466,8 +466,8 @@
  *   Value range: [min: 10, max: 12000]
  */
 #define EXTRUDE_SLOW_SPEED     60  // Default: 60
-#define EXTRUDE_NORMAL_SPEED  600  // Default: 600
-#define EXTRUDE_FAST_SPEED   1200  // Default: 1200
+#define EXTRUDE_NORMAL_SPEED  150  // Default: 600
+#define EXTRUDE_FAST_SPEED    300  // Default: 1200
 
 /**
  * Auto Save/Load Bed Leveling Data
